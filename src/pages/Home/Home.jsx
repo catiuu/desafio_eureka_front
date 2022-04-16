@@ -2,12 +2,15 @@
 import "./style.css";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
+import { UserProvider } from "../../context/UserContext";
 
 function Home() {
   return (
     <div className="container">
-      <Header />
-      <Input />
+      <UserProvider>
+        <Header />
+        <Input />
+      </UserProvider>
     </div>
   );
 }
