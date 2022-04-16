@@ -21,6 +21,10 @@ export function Input() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+
+    if (zipCodeValue > 8) {
+    }
+
     if (!zipCodeValue) {
       setShowUl(false);
       alert("Insira um CEP válido!");
@@ -57,6 +61,7 @@ export function Input() {
       <form onSubmit={(e) => e.preventDefault()} className="input-container">
         <input
           type="text"
+          maxLength={8}
           className="input"
           placeholder="Digite o CEP que deseja buscar"
           required
