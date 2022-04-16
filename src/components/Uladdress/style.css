@@ -1,0 +1,11 @@
+.ul-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ul-container li {
+  list-style-type: none;
+  width: 50%;
+}
