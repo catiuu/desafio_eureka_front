@@ -1,11 +1,23 @@
 import { useState } from "react";
 
-
 function useUserProvider() {
- //states
+  const [zipCodeData, setZipCodeData] = useState([]);
+  const [zipCodeValue, setZipCodeValue] = useState("");
+  const [showUl, setShowUl] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [showErro, setShowErro] = useState(false);
 
   return {
-    //export
+    zipCodeData,
+    setZipCodeData,
+    zipCodeValue,
+    setZipCodeValue,
+    showUl,
+    setShowUl,
+    loading,
+    setLoading,
+    showErro,
+    setShowErro,
   };
 }
 
