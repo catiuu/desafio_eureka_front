@@ -1,0 +1,21 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+.input {
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #8a2be2;
+  height: 50px;
+  width: 500px;
+  padding: 10px;
+}
+
+.search-icon {
+  height: 50px;
+  padding: 10px;
+  background-color: #8a2be2;
+  border-radius: 0px 10px 10px 0px;
+}
