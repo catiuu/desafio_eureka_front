@@ -22,14 +22,12 @@ export function Input() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    if (zipCodeValue > 8) {
-    }
-
-    if (!zipCodeValue) {
+    if (!zipCodeValue || zipCodeValue.length < 8) {
       setShowUl(false);
       alert("Insira um CEP válido!");
       return;
     }
+
     const baseURL = `https://eurekaviacep-api.herokuapp.com/search/${zipCodeValue}`;
     try {
       setLoading(true);
